@@ -73,7 +73,7 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
 - [ ] **Boas Práticas**
     - [ ] PSR (PHP Standards Recommendations): Seguir as recomendações de padrões de código PSR.
     - [ ] SOLID e Design Patterns: Aplicar os princípios SOLID e padrões de design no seu código PHP.
-    - [] Criar uma aplicação usando clean architect
+    - [ ] Criar uma aplicação usando clean architect
 
 ---
 
