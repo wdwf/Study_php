@@ -25,8 +25,8 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
 ## 🧭 Etapas de Desenvolvimento
 
 - [ ] **Fundamentos de PHP**
-    - [ ] Variaveis
-    - [ ] Tipo de dados
+    - [x] Variaveis
+    - [x] Tipo de dados
     - [ ] Operadores
     - [ ] If, Else
     - [ ] Switch
