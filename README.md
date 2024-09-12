@@ -3,6 +3,8 @@
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
+<img width="1555" alt="Frame 343" src="https://github.com/user-attachments/assets/b31d9275-5014-429e-89c4-a3c31894ae39">
+
 ## 💻 Descrição do Projeto
 
 Este projeto representa o estudo acerca da linguagem PHP e todo seu ambiente.
