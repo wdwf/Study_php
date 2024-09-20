@@ -24,22 +24,22 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
 
 ## 🧭 Etapas de Desenvolvimento
 - [ ] Etapa 1 (16/09 a 20/09)
-    - [ ] Ambiente
-        - [ ] Ambiente de Desenvolvimento: Configurar um ambiente de desenvolvimento local com Docker.
-        - [ ] Versionamento de Código: Usar Git para versionar seus projetos.
-    - [ ] **Fundamentos de PHP**
+    - [x] Ambiente
+        - [x] Ambiente de Desenvolvimento: Configurar um ambiente de desenvolvimento local com Docker.
+        - [x] Versionamento de Código: Usar Git para versionar seus projetos.
+    - [x] **Fundamentos de PHP**
         - [x] Variaveis
         - [x] Tipo de dados
-        - [ ] Manipular strings (Concatenação, funçoes: <code>strlen</code>, <code>substr</code>, <code>str_replace</code>)
-        - [ ] Operadores
-        - [ ] If, Else
-        - [ ] Switch
-        - [ ] for
-        - [ ] forech
-        - [ ] while
-        - [ ] Funções (escopo, parametros)
-        - [ ] Arrays (multidimensionais, funções: <code>array_merge</code>, <code>array_map</code>, etc)
-        - [ ] Objetos
+        - [x] Manipular strings (Concatenação, funçoes: <code>strlen</code>, <code>substr</code>, <code>str_replace</code>)
+        - [x] Operadores
+        - [x] If, Else
+        - [x] Switch
+        - [x] for
+        - [x] forech
+        - [x] while
+        - [x] Funções (escopo, parametros)
+        - [x] Arrays (multidimensionais, funções: <code>array_merge</code>, <code>array_map</code>, etc)
+        - [x] Objetos
     - [ ] **Trabalhando com a Web**
         - [ ] Superglobais: Variáveis como <code>$_GET</code>, <code>$_POST</code>, <code>$_SERVER</code>, <code>$_SESSION</code>, <code>$_COOKIE</code>.
         - [ ] Formulários HTML e PHP: Enviar dados para o servidor e processá-los com PHP.
