@@ -1,0 +1,76 @@
+:root {
+    --r-background-color: #F5F5F5;
+    --r-background-color-form: #fff;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--r-background-color);
+
+}
+
+form {
+    background-color: var(--r-background-color-form);
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #1E1E1E;
+    box-shadow: 2px 2px #1E1E1E;
+}
+
+form h2{
+    color: #525252;
+    font-weight: 400;
+}
+
+input[type="submit"] {
+    background: #1E1E1E;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 6px;
+    width: 100%;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+}
+
+input[type="submit"]:hover {
+    background: #fff;
+    color: #1E1E1E;
+    border: solid 1px #1E1E1E;
+    box-shadow: 2px 2px #1E1E1E;
+}
+
+input[type="file"] {
+    background-color: #c9c9c9;
+    padding: 2px;
+    border-radius: 8px;
+    margin: 12px 0;
+    width: 100%;
+    color: #525252;
+    font-weight: 700;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.fc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
