@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/routes.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +14,7 @@
 </head>
 
 <body>
-	<form action="src/Controller/UploadController.php" method="post" enctype="multipart/form-data">
+	<form action="/upload" method="post" enctype="multipart/form-data">
 		<h2>Upload de arquivo</h2>
 		<input type="file" name="arquivo" />
 		<input type="submit" value="Enviar" name="enviar" />
