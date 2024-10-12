@@ -1,9 +1,12 @@
-<?php 
+<?php
+
 
 //Agrupa classes, Permite os mesmo nomes para diferentes elementos em diferentes partes do código.
+
 namespace src\Services;
 
-class FileService {
+class FileService
+{
     private $file;
     private $maxSize = 1024 * 1024 * 10;
     private $allowedExtensions = ["png", "jpg", "
@@ -11,19 +14,23 @@ class FileService {
     private $allowedTypes = ["image/png", "image/jpg", "image/jpeg", "image/gif"];
 
 
-    public function __construct($file) {
+    public function __construct($file)
+    {
         $this->file = $file;
     }
 
-    public function validate() {
+    public function validate()
+    {
         $erros = [];
 
         if ($this->file['error'] !== UPLOAD_ERR_OK) {
             $erros[] = "Erro no upload do arquivo.";
+            return $erros;
         }
 
         if (empty($this->file['name'])) {
             $erros[] = "Nenhum arquivo enviado.";
+            return $erros;
         }
 
         if ($this->file['size'] > $this->maxSize) {
@@ -43,7 +50,8 @@ class FileService {
         return $erros;
     }
 
-    public function saveFile() {
+    public function saveFile()
+    {
         $path = "../../uploads/";
         $newName = uniqid("php_Image-") . "." . pathinfo($this->file['name'], PATHINFO_EXTENSION);
 
