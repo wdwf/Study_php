@@ -1,7 +1,14 @@
 services:
-  web:
-    build: .
+  etapa1:
+    build: etapa1/
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
-      - ./src:/var/www/html
+      - ./etapa1:/var/www/html
+
+#  etapa2:
+#    build: etapa2/
+#    ports:
+#      - "8081:80"
+#    volumes:
+#      - ./etapa2:/var/www/html

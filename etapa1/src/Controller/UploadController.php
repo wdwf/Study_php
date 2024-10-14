@@ -1,14 +1,13 @@
 <?php
 namespace src\Controller;
-session_start();
 
 use src\Services\FileService;
 
-require_once '../Services/FileService.php';
+require_once __DIR__ . '/../Services/FileService.php';
 
 class UploadController
 {
-    public function handleRequest()
+    public function handleRequest(): void
     {
         if (isset($_POST['enviar'])) {
             $fileService = new FileService($_FILES['arquivo']);
@@ -16,29 +15,19 @@ class UploadController
 
             if (!empty($erros)) {
                 $_SESSION['erros'] = $erros;
-                $this->redirectToForm();
+                $this->renderForm();
                 return;
             }
 
             $message = $fileService->saveFile();
             $_SESSION["mensagem"] = $message;
-            //chama a própria classe
-            // $this->redirectToForm();
         }
         $this->renderForm();
     }
 
-    // private function redirectToForm()
-    // {
-    //     header('Location: /etapa1/web/uploadFile/index.php');
-    //     exit();
-    // }
     private function renderForm()
     {
         // Inclui a view (index.php ou outra que você queira usar para o formulário)
-        require_once __DIR__ . '/../../index.php';
+        require_once __DIR__ . '/../../views/uploadFile/index.phtml';
     }
 }
-
-$controller = new UploadController();
-$controller->handleRequest();

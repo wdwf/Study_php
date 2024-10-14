@@ -52,7 +52,7 @@ class FileService
 
     public function saveFile()
     {
-        $path = "../../uploads/";
+        $path = __DIR__ . "/../../uploads/";
         $newName = uniqid("php_Image-") . "." . pathinfo($this->file['name'], PATHINFO_EXTENSION);
 
         if (move_uploaded_file($this->file['tmp_name'], $path . $newName)) {
