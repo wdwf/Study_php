@@ -40,14 +40,14 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
         - [x] Funções (escopo, parametros)
         - [x] Arrays (multidimensionais, funções: <code>array_merge</code>, <code>array_map</code>, etc)
         - [x] Objetos
-    - [ ] **Trabalhando com a Web**
-        - [ ] Superglobais: Variáveis como <code>$_GET</code>, <code>$_POST</code>, <code>$_SERVER</code>, <code>$_SESSION</code>, <code>$_COOKIE</code>.
-        - [ ] Formulários HTML e PHP: Enviar dados para o servidor e processá-los com PHP.
-        - [ ] Upload de Arquivos: Como tratar uploads de arquivos com PHP.
+    - [x] **Trabalhando com a Web**
+        - [x] Superglobais: Variáveis como <code>$_GET</code>, <code>$_POST</code>, <code>$_SERVER</code>, <code>$_SESSION</code>, <code>$_COOKIE</code>.
+        - [x] Formulários HTML e PHP: Enviar dados para o servidor e processá-los com PHP.
+        - [x] Upload de Arquivos: Como tratar uploads de arquivos com PHP.
 - Etapa 2 (21/09 a 27/09)
-    - [ ] **Gestão de Dependências (Composer)**
-        - [ ] Aprenda a usar o composer
-        - [ ] Visite o Packgist, repositorio do composer
+    - [x] **Gestão de Dependências (Composer)**
+        - [x] Aprenda a usar o composer
+        - [x] Visite o Packgist, repositorio do composer
     - [ ] **Banco de dados**
         - [ ] PostgreSQL com PHP: Conectar com o banco
         - [ ] CRUD: Implementar operações basicas com banco
