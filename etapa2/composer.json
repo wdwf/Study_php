@@ -1,0 +1,15 @@
+{
+    "name": "wdwf/etapa2",
+    "autoload": {
+        "psr-4": {
+            "Wdwf\\Etapa2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wdwf",
+            "email": "w_dwf@hotmail.com"
+        }
+    ],
+    "require": {}
+}
