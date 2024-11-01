@@ -49,8 +49,8 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
         - [x] Aprenda a usar o composer
         - [x] Visite o Packgist, repositorio do composer
     - [ ] **Banco de dados**
-        - [ ] PostgreSQL com PHP: Conectar com o banco
-        - [ ] CRUD: Implementar operações basicas com banco
+        - [x] PostgreSQL com PHP: Conectar com o banco
+        - [x] CRUD: Implementar operações basicas com banco
         - [ ] Prepared Statements: Usar consultas preparadas para evitar injeções de SQL.
     - [ ] **POO**
         - [ ] Classes e Objetos: Definição de classes, objetos, métodos e propriedades.

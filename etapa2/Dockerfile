@@ -3,6 +3,9 @@ FROM php:8.3-cli-alpine
 # Tudo vai rodar dentro do /var/www/html no container
 WORKDIR /var/www/html
 
+# Instalando pacotes
+RUN apk add postgresql-dev libpq-dev && docker-php-ext-install pdo pdo_pgsql
+
 # Copia a pasta de fora para a pasta /var/www/html de dentro do container
 COPY ./ /var/www/html
 

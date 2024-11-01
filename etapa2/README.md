@@ -50,3 +50,46 @@ ou
 ### Atualize o autoload (se necessário):
 Se o pacote removido estiver envolvido no autoloading (PSR-4 ou outro), você pode atualizar os arquivos de autoload do Composer executando:
 <code>composer dump-autoload</code>
+
+# Conectando ao banco de dados - Postgres
+
+Antes de começar, é importante garantir que você tenha o PostgreSQL instalado em seu ambiente de desenvolvimento e o PHP devidamente configurado. Certifique-se também de possuir as credenciais de acesso necessárias para o banco de dados.
+
+Para conectar ao PostgreSQL com PHP, utilizamos a extensão PDO (PHP Data Objects), que fornece uma interface consistente para se trabalhar com diferentes bancos de dados. Você pode verificar se a extensão PDO está instalada em seu ambiente executando o seguinte código:
+
+<pre>
+    <code>
+    <?php
+        phpinfo();
+    ?>
+  </code>
+</pre>
+
+No resultado exibido, procure pela seção PDO e verifique se o PostgreSQL está listado como um dos drivers disponíveis. Caso não esteja presente, é necessário habilitar a extensão PDO_PGSQL no arquivo de configuração do PHP.
+
+##### Nota: Estou tentando usar o padrão de clean architecture logo:
+
+Na Clean Architecture, geralmente separamos as responsabilidades em diferentes camadas:
+
+Camada de Interface (Controllers): Gerencia a interação do usuário.
+Casos de Uso: Onde estão as regras de negócio específicas.
+Entidades: Representam os dados e as regras de negócio fundamentais.
+Adaptadores e Gateways (Repositories): Fazem a interface entre a aplicação e as fontes de dados, como o banco de dados.
+<pre>
+<code>
+project-root/
+├── public/
+│   └── index.php             # Arquivo inicial da aplicação
+├── src/
+│   ├── config/
+│   │   └── Database.php      # Configuração e conexão com o banco de dados
+│   ├── controllers/
+│   │   └── UserController.php # Controlador para gerenciar requests do usuário
+│   ├── entities/
+│   │   └── User.php          # Entidade que representa o usuário
+│   ├── repositories/
+│   │   └── UserRepository.php # Classe que interage com o banco de dados
+│   └── usecases/
+│       └── UserService.php    # Caso de uso para as operações CRUD do usuário
+└── vendor/
+</code></pre>
