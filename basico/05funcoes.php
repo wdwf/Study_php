@@ -59,7 +59,7 @@
     echo "<br><br>";
     $arr8 = ["A", "B", "C"];
     $arr9 = ["F", "G", "H"];
-    var_dump(array_splice($arr8, 0, 1, $arr9));
+    var_dump("splice:", array_splice($arr8, 0, 1, $arr9));
     echo "<br><br>";
 
 
@@ -119,6 +119,16 @@
     include '01variaveis.php';
 
     echo "Variavel de outro arquivo $Var";
+
+    /*
+    include vs require
+
+    * include - se o arquivo não for encontrado, um aviso será emitido, mas o script continuará a ser executado.
+
+    * require - se o arquivo não for encontrado, um erro fatal será emitido, e a execução do script será interrompida.
+
+    * include_once e require_once - versões dessas funções que garantem que o arquivo seja incluído apenas uma vez durante a execução do script, evitando inclusões múltiplas acidentais.
+    */
 
     # ----------------
 
